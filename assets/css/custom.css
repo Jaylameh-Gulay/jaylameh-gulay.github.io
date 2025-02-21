@@ -1,0 +1,416 @@
+.border-rounded {
+  border-radius: 50%;
+  animation: glow 5s infinite;
+}
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 20px #fff;
+  }
+  50% {
+    box-shadow: 0 0 90px rgb(6, 214, 160);
+  }
+  100% {
+    box-shadow: 0 0 20px #fff;
+  }
+}
+.about .con {
+  box-sizing: border-box;
+}
+.con {
+  border-top: 2px solid rgb(248, 255, 229);
+  border-bottom: 2px solid rgb(248, 255, 229);
+  color: #fff;
+  border-radius: 10px;
+  /* background-color: rgb(248, 255, 229, 0.4); */
+
+  backdrop-filter: blur(100px) saturate(190%);
+}
+h3 {
+  color: rgb(248, 255, 229);
+}
+h3 .typed {
+  color: rgb(6, 214, 160);
+}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+
+nav {
+  width: 100%;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  padding: 6px 20px;
+  transition: 0.5s;
+  position: relative;
+}
+
+nav a:hover,
+nav a .active {
+  color: rgb(6, 214, 160);
+}
+
+nav a span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  border-bottom: 4px solid rgb(6, 214, 160);
+  border-radius: 15px;
+  transform: scale(0) translateY(50px);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+nav a:hover span,
+nav a.active span {
+  transform: scale(1) translateY(0);
+  opacity: 1;
+}
+.about .container .cod {
+  color: rgb(6, 214, 160);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  justify-content: center;
+  padding-top: 5px;
+  text-decoration: wavy;
+}
+.about .container .prof {
+  color: rgb(6, 214, 160);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  justify-content: center;
+  margin-top: 10%;
+  text-decoration: wavy;
+}
+#glass {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgb(6, 214, 160, 0.4)
+  );
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(80px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(6, 214, 160, 0.37);
+}
+.about #caret {
+  color: rgb(6, 214, 160);
+}
+
+.about #mortarboard {
+  color: rgb(6, 214, 160);
+}
+.about #deg {
+  color: rgba(255, 255, 255);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+#interest {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgb(6, 214, 160, 0.4)
+  );
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(80px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  /* box-shadow: 0 8px 32px 0 rgba(6, 214, 160, 0.37); */
+}
+.about #conta {
+  width: 100%;
+  padding: 50px 30px;
+  background-color: rgba(255, 255, 255, 0.06);
+  border: 2px solid rgb(6, 214, 160, 0.6);
+  border-radius: 10px;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+}
+.hero .BG {
+  background-size: cover;
+}
+.about #inte h2 {
+  color: rgb(6, 214, 160);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+
+  margin-top: 5%;
+  text-decoration: wavy;
+}
+.about #game {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.about #icons {
+  color: rgb(6, 214, 160);
+  padding-left: 20px;
+  font-size: 50px;
+}
+.about #contai {
+  width: 20%;
+  padding: 50px 10px;
+  background-color: rgba(255, 255, 255, 0.06);
+  border: 2px solid rgb(6, 214, 160, 0.3);
+  border-radius: 10px;
+  /* box-shadow: 5px 10px 20px rgb(6, 214, 160, 0.2); */
+  backdrop-filter: blur(80px);
+  justify-content: space-evenly;
+  margin: 0 20px;
+}
+.about #cont {
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
+  font-weight: 500;
+}
+.about .ht {
+  color: #d70654;
+}
+h2 {
+  margin-bottom: 40px;
+  letter-spacing: 2px;
+}
+.skills:not(:last-child) {
+  margin-bottom: 30px;
+}
+.details {
+  width: 100%;
+  display: flex;
+  align-items: center; /* Align items vertically */
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.details span:first-child {
+  display: flex;
+  align-items: center;
+}
+.details img {
+  margin-left: 10px; /* Add some space between text and image */
+}
+.bar {
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  padding: 5px 10px;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+}
+.bar div {
+  position: relative;
+  width: 0;
+  height: 5px;
+  border-radius: 10px;
+  background-color: #badefc;
+  border: 1px solid #1c97fc;
+  box-shadow: 0 0 5px rgba(28, 151, 252, 0.6);
+}
+.about #percent {
+  color: rgb(6, 214, 160);
+}
+#html-bar {
+  animation: html-fill 2s forwards;
+}
+@keyframes html-fill {
+  100% {
+    width: 70%;
+  }
+}
+#boot-bar {
+  animation: boot-fill 2s forwards;
+}
+@keyframes boot-fill {
+  100% {
+    width: 45%;
+  }
+}
+#css-bar {
+  animation: css-fill 2s forwards;
+}
+@keyframes css-fill {
+  100% {
+    width: 65%;
+  }
+}
+#js-bar {
+  animation: js-fill 2s forwards;
+}
+@keyframes js-fill {
+  100% {
+    width: 20%;
+  }
+}
+#jQuery-bar {
+  animation: jQuery-fill 2s forwards;
+}
+@keyframes jQuery-fill {
+  100% {
+    width: 68%;
+  }
+}
+/* SCROLL ANIMATION */
+.about {
+}
+@keyframes appear {
+  from {
+    opacity: 0;
+    scale: 0.5s;
+  }
+  to {
+    opacity: 1;
+    scale: 1s;
+  }
+}
+.block {
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: 70%;
+}
+/* HERO INDEX */
+.hero {
+  width: 100%;
+  min-height: calc(100vh - 92px);
+  position: relative;
+  padding: 60px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+}
+/* .hero .hr-custom {
+  background-color: rgb(248, 255, 229);
+} */
+.hero .container {
+  position: relative;
+  z-index: 3;
+}
+.hero h3 {
+  font-size: 50px;
+  color: rgb(248, 255, 229);
+}
+
+.hero h2 {
+  margin: 0;
+  font-size: 60px;
+  font-weight: 700;
+}
+
+.hero h2 span {
+  color: rgb(6, 214, 160);
+  text-shadow: 2px 0 5px rgb(5, 171, 128);
+}
+
+.hero p {
+  margin: 5px 2px 0 0;
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.hero p span {
+  letter-spacing: 1px;
+  color: rgb(6, 214, 160);
+}
+
+.social-links i {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 3rem;
+  height: 3rem;
+  background-color: transparent;
+  border: 0.2rem solid rgb(6, 214, 160);
+  border-radius: 50%;
+  color: rgb(248, 255, 229);
+  margin: 5px 10px;
+  font-size: 1.5rem;
+  transition: 0.1s linear;
+}
+
+.social-links i:hover {
+  scale: 1.3;
+  color: white;
+  background-color: rgb(6, 214, 160);
+  filter: drop-shadow(0 0 10px rgb(248, 255, 229));
+}
+
+@media (max-width: 768px) {
+  .hero h2 {
+    font-size: 32px;
+  }
+
+  .hero p {
+    font-size: 20px;
+  }
+}
+
+/* RESUME */
+.resume #resume {
+  width: 100%;
+  padding: 50px 10px;
+  background-color: rgba(255, 255, 255, 0.06);
+  border: 2px solid rgb(6, 214, 160, 0.3);
+  border-radius: 10px;
+  /* box-shadow: 5px 10px 20px rgb(6, 214, 160, 0.2); */
+  backdrop-filter: blur(80px);
+  justify-content: space-evenly;
+  margin: 0 20px;
+}
+.typewriter span::before {
+  content: "UI Designer";
+  animation: words 5s infinite;
+}
+.hero .typewriter {
+  color: rgba(255, 255, 255, 0.5);
+}
+.hero .typewriter {
+  font-size: 45px;
+}
+.hero .typewriter span {
+  color: #d70654;
+  font-size: 2.5rem;
+  /* text-shadow: 0 0 2px rgb(109, 67, 0); */
+  position: relative;
+  transition: 0.3s linear;
+}
+.typewriter span::after {
+  content: "";
+  position: absolute;
+  left: 1; /* Add this line to align the border with the text */
+  width: 3px; /* Adjust the width to match the border width */
+  height: 120%;
+  border-left: 3px solid #d70654;
+  animation: cursor 0.6s linear infinite;
+}
+.hero #typewriterr {
+  color: rgb(248, 255, 229);
+}
+@keyframes cursor {
+  to {
+    border-left: 3px solid #d70654;
+  }
+}
+@keyframes words {
+  0%,
+  33% {
+    content: "UI Designer";
+  }
+  34%,
+  66% {
+    content: "Project Manager";
+  }
+  67%,
+  100% {
+    content: "Bookkeeper";
+  }
+}
