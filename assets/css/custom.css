@@ -418,7 +418,7 @@ h2 {
 
 .about .autoshow {
   animation: autoshowAnimation;
-  animation-timeline: view();
+  animation-timeline: view(70% 5%);
 }
 @keyframes autoshowAnimation {
   from {
