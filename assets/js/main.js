@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
       event.preventDefault();
       const target = this.getAttribute("href");
 
-      document.body.classList.add("view-transition-new(root)");
+      document.body.classList.add("view-transition-old(root)");
 
       setTimeout(() => {
         window.location.href = target;
