@@ -430,3 +430,145 @@ to {
   opacity: 1;
   transform: translateY(0) scale(1);
 }
+
+@view-transition {
+  navigation: auto;
+}
+/* @keyframes moveIn {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
+@keyframes moveOut {
+  from {
+    transform: translateY(0%);
+  }
+  to {
+    transform: translateY(-100%);
+  }
+}
+::view-transition-old(root) {
+  animation: 0.8s cubic-bezier(0.87, 0, 0.13, 1) both moveOut;
+}
+::view-transition-old(root) {
+  animation: 0.8s cubic-bezier(0.87, 0, 0.13, 1) both moveIn;
+} */
+@keyframes blur-out {
+  from {
+    filter: blur(0px);
+    transform: scale(1);
+    opacity: 1;
+  }
+  to {
+    filter: blur(20px);
+    transform: scale(1.2);
+    opacity: 0;
+  }
+}
+@keyframes blur-in {
+  from {
+    filter: blur(20px);
+    transform: scale(1.2);
+    opacity: 0;
+  }
+  to {
+    filter: blur(0px);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+.blur-out {
+  animation: 0.2s blur-out;
+}
+::view-transition-old(root) {
+  animation: 0.4s ease-out both blur-out;
+}
+::view-transition-new(root) {
+  animation: 0.4s ease-in both blur-in;
+}
+.transition-out {
+  animation: 0.4s ease-out both blur-out;
+}
+@keyframes yank-out {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(100%, -100%);
+  }
+}
+.yank-out {
+  animation: 0.2s yank-out;
+}
+
+@keyframes fall-back {
+  from {
+    scale: 1;
+  }
+  to {
+    scale: 0.8;
+  }
+}
+.header #bg img {
+  background-color: #1c97fc;
+}
+@keyframes drop-out {
+  from {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+}
+
+::view-transition-old(root) {
+  animation: 1s cubic-bezier(0.87, 0, 0.13, 1) both drop-out,
+    0.4s cubic-bezier(0.87, 0, 0.13, 1) both fall-back;
+}
+.hero .bg-bg {
+  margin-bottom: 0%;
+}
+.hero .imgg {
+  background-color: #d70654;
+  border-radius: 50%;
+  border: 5px solid rgb(6, 214, 160);
+  animation: glow 5s infinite;
+}
+.image-overlay {
+  position: relative;
+}
+
+.image-overlay img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.image-overlay::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)
+  );
+  opacity: 0.7;
+}
+
+.image-overlay .text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 2em;
+}
