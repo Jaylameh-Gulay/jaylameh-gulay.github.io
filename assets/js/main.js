@@ -5,6 +5,26 @@
  * Author: BootstrapMade.com
  * License: https://bootstrapmade.com/license/
  */
+// PAGE TRANSITION
+
+document.addEventListener("DOMContentLoaded", function () {
+  const links = document.querySelectorAll("nav a");
+
+  links.forEach((link) => {
+    link.addEventListener("click", function (event) {
+      event.preventDefault();
+      const target = this.getAttribute("href");
+
+      document.body.classList.add("view-transition-old(root)");
+
+      setTimeout(() => {
+        window.location.href = target;
+      }, 400); // Duration should match the CSS animation duration
+    });
+  });
+});
+
+// TYPEWRITER ANIMATION
 document.addEventListener("DOMContentLoaded", function () {
   const elements = document.querySelectorAll("#nickname2");
   const items = elements[0].dataset.typedItems.split(",");
