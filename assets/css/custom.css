@@ -78,6 +78,7 @@ nav a.active span {
   transform: scale(1) translateY(0);
   opacity: 1;
 }
+/* ABOUT */
 .about .container .cod {
   color: rgb(6, 214, 160);
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
@@ -104,6 +105,41 @@ nav a.active span {
   border: 1px solid rgba(255, 255, 255, 0.18);
   box-shadow: 0 8px 32px 0 rgba(6, 214, 160, 0.37);
 }
+.border-rounded {
+  border-radius: 50%;
+  animation: glow 5s infinite;
+}
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 20px #fff;
+  }
+  50% {
+    box-shadow: 0 0 90px rgb(6, 214, 160);
+  }
+  100% {
+    box-shadow: 0 0 20px #fff;
+  }
+}
+.about .con {
+  box-sizing: border-box;
+}
+.con {
+  margin-top: 10%;
+  border-top: 2px solid rgb(248, 255, 229);
+  border-bottom: 2px solid rgb(248, 255, 229);
+  color: #fff;
+  border-radius: 10px;
+  /* background-color: rgb(248, 255, 229, 0.4); */
+
+  backdrop-filter: blur(100px) saturate(190%);
+}
+h3 {
+  color: rgb(248, 255, 229);
+}
+h3 .typed {
+  color: rgb(6, 214, 160);
+}
+
 .about #caret {
   color: rgb(6, 214, 160);
 }
@@ -136,9 +172,7 @@ nav a.active span {
   box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(10px);
 }
-.hero .BG {
-  background-size: cover;
-}
+
 .about #inte h2 {
   color: rgb(6, 214, 160);
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
