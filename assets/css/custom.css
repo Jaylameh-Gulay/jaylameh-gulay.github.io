@@ -17,6 +17,7 @@
   box-sizing: border-box;
 }
 .con {
+  margin-top: 10%;
   border-top: 2px solid rgb(248, 255, 229);
   border-bottom: 2px solid rgb(248, 255, 229);
   color: #fff;
