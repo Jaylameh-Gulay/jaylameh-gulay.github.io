@@ -146,9 +146,23 @@ h3 .typed {
   font-size: 20px;
   color: rgb(6, 214, 160);
 }
+.about h3 p {
+  font-size: 20px;
+}
 
 .about .me .email:hover {
   color: #d70654;
+}
+.about .me h4 {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: rgb(6, 214, 160);
+}
+.about .bi-envelope-at {
+  color: rgb(6, 214, 160);
+}
+.about .bi-telephone {
+  color: rgb(6, 214, 160);
 }
 .about #caret {
   color: rgb(6, 214, 160);
