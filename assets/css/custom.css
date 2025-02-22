@@ -538,6 +538,7 @@ to {
   background-color: #d70654;
   border-radius: 50%;
   border: 5px solid rgb(6, 214, 160);
+  box-sizing: border-box;
   animation: glow 5s infinite;
 }
 /* design sa naay hi!  */
@@ -574,4 +575,11 @@ to {
   transform: translate(-50%, -50%);
   color: white;
   font-size: 2em;
+}
+/* IMAGE SA INDEX ANIMATION */
+.zoom img {
+  transition: transform 0.5s ease;
+}
+.zoom img:hover {
+  transform: scale(1.2);
 }
