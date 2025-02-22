@@ -533,12 +533,15 @@ to {
 .hero .bg-bg {
   margin-bottom: 0%;
 }
+/* DESIGN SA IMAGE BACKGROUND  */
 .hero .imgg {
   background-color: #d70654;
   border-radius: 50%;
   border: 5px solid rgb(6, 214, 160);
   animation: glow 5s infinite;
 }
+/* design sa naay hi!  */
+
 .image-overlay {
   position: relative;
 }
