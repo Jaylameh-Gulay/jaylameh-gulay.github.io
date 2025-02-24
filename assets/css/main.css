@@ -676,7 +676,7 @@ h6 {
 /*--------------------------------------------------------------
 # Global Sections
 --------------------------------------------------------------*/
-/* section,
+section,
 .section {
   color: var(--default-color);
   background-color: var(--background-color);
@@ -690,7 +690,7 @@ h6 {
   .section {
     scroll-margin-top: 76px;
   }
-} */
+}
 
 /*--------------------------------------------------------------
 # Global Section Titles
