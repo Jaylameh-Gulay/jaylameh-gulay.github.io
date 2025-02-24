@@ -13,11 +13,11 @@
     box-shadow: 0 0 20px #fff;
   }
 }
-.about .con {
+/* .about .con {
   box-sizing: border-box;
-}
+} */
 .con {
-  margin-top: 10%;
+  margin-top: 2%;
   border-top: 2px solid rgb(248, 255, 229);
   border-bottom: 2px solid rgb(248, 255, 229);
   color: #fff;
@@ -124,7 +124,7 @@ nav a.active span {
   box-sizing: border-box;
 }
 .con {
-  margin-top: 10%;
+  /* margin-top: 10%; */
   border-top: 2px solid rgb(248, 255, 229);
   border-bottom: 2px solid rgb(248, 255, 229);
   color: #fff;
@@ -464,11 +464,8 @@ h2 {
   33% {
     content: "UI Designer";
   }
-  34%,
-  66% {
-    content: "Project Manager";
-  }
-  67%,
+
+  33%,
   100% {
     content: "Student";
   }
@@ -689,6 +686,29 @@ to {
   border-radius: 50%;
 }
 
+.timeline-content .bi-filetype-html {
+  font-size: 30px;
+}
+
+.timeline-content .bi-filetype-css {
+  font-size: 30px;
+}
+.timeline-content .bi-filetype-js {
+  font-size: 30px;
+}
+.timeline-content .bi-bootstrap {
+  font-size: 30px;
+}
+.timeline-content .bi-lightbulb {
+  font-size: 30px;
+}
+.timeline-content .bi-people-fill {
+  font-size: 30px;
+}
+.timeline-content .bi-clipboard-data {
+  font-size: 30px;
+}
+
 .timeline-content .content {
   padding: 24px;
   border: 2px solid #0ef;
@@ -831,3 +851,5 @@ to {
   border: 2px solid rgb(6, 214, 160);
   color: #fff;
 }
+
+/* Media Queries for Responsiveness */
