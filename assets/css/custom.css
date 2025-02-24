@@ -277,7 +277,7 @@ h2 {
 }
 @keyframes html-fill {
   100% {
-    width: 70%;
+    width: 40%;
   }
 }
 #boot-bar {
@@ -285,7 +285,7 @@ h2 {
 }
 @keyframes boot-fill {
   100% {
-    width: 45%;
+    width: 15%;
   }
 }
 #css-bar {
@@ -293,7 +293,7 @@ h2 {
 }
 @keyframes css-fill {
   100% {
-    width: 65%;
+    width: 25%;
   }
 }
 #js-bar {
@@ -301,7 +301,7 @@ h2 {
 }
 @keyframes js-fill {
   100% {
-    width: 20%;
+    width: 10%;
   }
 }
 #jQuery-bar {
