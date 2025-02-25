@@ -334,7 +334,8 @@ h6 {
 /* Mobile Navigation */
 @media (max-width: 1199px) {
   .mobile-nav-toggle {
-    color: var(--nav-color);
+    color: rgb(6, 214, 160);
+
     font-size: 28px;
     line-height: 0;
     margin-right: 10px;
@@ -702,6 +703,7 @@ section,
 }
 
 .section-title h2 {
+  color: rgb(6, 214, 160);
   font-size: 32px;
   font-weight: 700;
   margin-bottom: 20px;
@@ -720,10 +722,7 @@ section,
   right: 0;
   bottom: 0;
   margin: auto;
-}
-
-.section-title p {
-  margin-bottom: 0;
+  border: 2px solid #d70654;
 }
 
 /*--------------------------------------------------------------
@@ -1084,7 +1083,7 @@ section,
 
 .portfolio .portfolio-filters li:hover,
 .portfolio .portfolio-filters li.filter-active {
-  color: var(--accent-color);
+  color: rgb(6, 214, 160);
 }
 
 .portfolio .portfolio-filters li:first-child {
@@ -1114,8 +1113,24 @@ section,
   bottom: 0;
   z-index: 3;
   transition: all ease-in-out 0.3s;
-  background: color-mix(in srgb, var(--background-color), transparent 10%);
+  background: rgb(6, 214, 160, 0.3);
   padding: 15px;
+}
+.portfolio-info h3 {
+  color: rgb(6, 214, 160);
+}
+.portfolio-info h3:after {
+  content: "";
+  position: relative;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: var(--accent-color);
+  left: 0;
+
+  bottom: 0;
+  margin: auto;
+  border: 2px solid #d70654;
 }
 
 .portfolio .portfolio-item .portfolio-info h4 {
@@ -1123,18 +1138,39 @@ section,
   font-weight: 600;
   padding-right: 50px;
 }
-
+.portfolio-info ul span {
+  color: rgb(6, 214, 160);
+}
+.portfolio-info li {
+  color: rgb(248, 255, 229);
+}
 .portfolio .portfolio-item .portfolio-info p {
   color: color-mix(in srgb, var(--default-color), transparent 30%);
   font-size: 14px;
   margin-bottom: 0;
   padding-right: 50px;
 }
-
+.portfolio .bi-link-45deg {
+  color: rgb(6, 214, 160);
+  font-size: 15px;
+}
+.portfolio .bi-link-45deg:hover {
+  color: #d70654;
+  font-size: 15px;
+}
+.portfolio .bi-zoom-in:hover {
+  color: #d70654;
+}
+.portfolio .bi-zoom-in {
+  font-size: 15px;
+}
+.portfolio .portfolio-item a {
+  font-size: 15px;
+}
 .portfolio .portfolio-item .portfolio-info .preview-link,
 .portfolio .portfolio-item .portfolio-info .details-link {
   position: absolute;
-  right: 50px;
+  right: 115px;
   font-size: 24px;
   top: calc(50% - 14px);
   color: color-mix(in srgb, var(--default-color), transparent 30%);
@@ -1144,19 +1180,42 @@ section,
 
 .portfolio .portfolio-item .portfolio-info .preview-link:hover,
 .portfolio .portfolio-item .portfolio-info .details-link:hover {
-  color: var(--accent-color);
+  color: rgb(6, 214, 160);
 }
 
 .portfolio .portfolio-item .portfolio-info .details-link {
   right: 14px;
-  font-size: 28px;
+  font-size: 50px;
 }
 
 .portfolio .portfolio-item:hover .portfolio-info {
   opacity: 1;
   bottom: 20px;
 }
-
+.portfolio-description h2 {
+  color: rgb(6, 214, 160);
+}
+.portfolio-description p {
+  color: rgb(248, 255, 229);
+  font-size: 24px;
+}
+.portfolio-description h4 {
+  color: rgb(6, 214, 160);
+}
+.portfolio-description .feat {
+  color: #d70654;
+  font-size: 20px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.portfolio-description .key {
+  color: rgb(6, 214, 160);
+  font-size: 20px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.portfolio-description .bi-chevron-compact-right {
+  color: #d70654;
+  font-weight: 200px;
+}
 /*--------------------------------------------------------------
 # Pricing Section
 --------------------------------------------------------------*/
@@ -1312,14 +1371,8 @@ section,
 .testimonials .testimonial-item .testimonial-img {
   width: 100px;
   border-radius: 50%;
-  border: 6px solid color-mix(in srgb, var(--default-color), transparent 85%);
+  /* border: 6px solid color-mix(in srgb, var(--default-color), transparent 85%); */
   margin: 0 auto;
-}
-
-.testimonials .testimonial-item h3 {
-  font-size: 20px;
-  font-weight: bold;
-  margin: 10px 0 5px 0;
 }
 
 .testimonials .testimonial-item h4 {
@@ -1331,7 +1384,10 @@ section,
 .testimonials .testimonial-item .stars {
   margin-bottom: 15px;
 }
-
+.testimonial-item .dev {
+  color: rgb(6, 214, 160);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
 .testimonials .testimonial-item .stars i {
   color: #ffc107;
   margin: 0 1px;
@@ -1583,14 +1639,14 @@ section,
 
 .portfolio-details .portfolio-info .btn-visit {
   padding: 8px 40px;
-  background: var(--accent-color);
-  color: var(--contrast-color);
+  background: transparent;
+  color: rgb(248, 255, 229);
   border-radius: 50px;
   transition: 0.3s;
 }
 
 .portfolio-details .portfolio-info .btn-visit:hover {
-  background: color-mix(in srgb, var(--accent-color), transparent 20%);
+  background: rgb(6, 214, 160);
 }
 
 .portfolio-details .portfolio-description h2 {
