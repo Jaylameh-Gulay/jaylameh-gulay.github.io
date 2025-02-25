@@ -703,6 +703,7 @@ section,
 }
 
 .section-title h2 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   color: rgb(6, 214, 160);
   font-size: 32px;
   font-weight: 700;
@@ -1431,12 +1432,12 @@ section,
 .testimonials .swiper-pagination .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
-  background-color: color-mix(in srgb, var(--default-color), transparent 50%);
+  background-color: rgb(6, 214, 160);
   opacity: 0.5;
 }
 
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: var(--default-color);
+  background-color: rgb(6, 214, 160);
   opacity: 1;
 }
 
