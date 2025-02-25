@@ -693,6 +693,7 @@ to {
 .timeline-content .bi-filetype-css {
   font-size: 30px;
 }
+
 .timeline-content .bi-filetype-js {
   font-size: 30px;
 }
@@ -851,5 +852,3 @@ to {
   border: 2px solid rgb(6, 214, 160);
   color: #fff;
 }
-
-/* Media Queries for Responsiveness */
