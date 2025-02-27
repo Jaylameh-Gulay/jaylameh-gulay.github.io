@@ -650,11 +650,11 @@ to {
 .timeline .timeline-row {
   display: flex;
   column-gap: 1px;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
 }
 
 .timeline-row .timeline-column {
-  flex: 1 1 300px;
+  flex: 1 1 200px;
 }
 
 .timeline-column .title {
