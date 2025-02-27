@@ -594,7 +594,7 @@ to {
   border-width: 15px;
   border-radius: 90%;
   border: 2px solid rgb(6, 214, 160);
-  padding-right: 10%;
+  padding-right: 5%;
   padding-left: 5%;
 
   animation: glow 5s infinite;
