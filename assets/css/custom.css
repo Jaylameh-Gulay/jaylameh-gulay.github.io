@@ -669,9 +669,7 @@ to {
   border-left: 2px solid #0ef;
   padding: 0%;
 }
-* {
-  font-size: 15px;
-}
+
 .timeline-box .timeline-content {
   position: relative;
   padding-left: 20px;
