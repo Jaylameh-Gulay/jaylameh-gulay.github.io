@@ -591,9 +591,12 @@ to {
 /* DESIGN SA IMAGE BACKGROUND  */
 .hero .imgg {
   background-color: #d70654;
-  border-radius: 70%;
+  border-width: 15px;
+  border-radius: 90%;
   border: 5px solid rgb(6, 214, 160);
-  box-sizing: border-box;
+  padding-right: 10%;
+  padding-left: 5%;
+
   animation: glow 5s infinite;
 }
 /* design sa naay hi!  */
