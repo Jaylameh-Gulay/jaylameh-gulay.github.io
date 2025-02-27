@@ -600,11 +600,12 @@ h6 {
 .scroll-top {
   position: fixed;
   visibility: hidden;
+
   opacity: 0;
   right: 15px;
   bottom: -15px;
   z-index: 99999;
-  background-color: var(--accent-color);
+  background-color: transparent;
   width: 44px;
   height: 44px;
   border-radius: 50px;
@@ -618,8 +619,9 @@ h6 {
 }
 
 .scroll-top:hover {
-  background-color: color-mix(in srgb, var(--accent-color), transparent 20%);
-  color: var(--contrast-color);
+  background-color: rgb(6, 214, 160);
+  color: #d70654;
+  border-radius: 50%;
 }
 
 .scroll-top.active {
